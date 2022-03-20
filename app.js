@@ -2,7 +2,10 @@ const express = require('express');
 const path = require("path");
 const app = express();
 const User = require('./src/models/users');
-
+// import dotev from "dotenv";
+// const dotevn=require("./.env");
+// dotevn.config()
+require("dotenv").config()
 // const userRouters = require('./route/user')
 const userRouters = require('./route/user');
 const hbs = require('hbs');
