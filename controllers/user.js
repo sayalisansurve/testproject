@@ -40,7 +40,7 @@ exports.getLogIn = async function (req, res, next) {
                 ]
             })
                 .then(userInDB => {
-                    // console.log(userInDB);
+                    console.log(userInDB);
                     if (userInDB == null) {
                         
                         userFind = false;
