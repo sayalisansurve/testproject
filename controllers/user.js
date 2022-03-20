@@ -3,8 +3,10 @@ const User = require('../src/models/users')
 const bcrypt = require('bcrypt');
 
 exports.getMainPage= (req, res, next) => {
-    username=req.body;
-    res.render('index',{username:username});
+
+    // username=req.body;
+    // res.render('index',{username:username});
+    res.render('index');
 };
 
 exports.getSignupForm = (req, res, next) => {
