@@ -30,7 +30,7 @@ hbs.registerPartials(partialspath);
 
 
 //server start
-app.listen( process.env.port ||port, () => {
+app.listen( process.env.PORT ||port, () => {
     console.log(`server is running at port no ${port}`);
 
 })
