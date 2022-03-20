@@ -12,7 +12,7 @@ const hbs = require('hbs');
 
 require('./src/db/conn_mongodb');
 
-const port = process.env.port || 3001;
+const port = 3001;
 
 const staticpath = path.join(__dirname, "./public");
 const templatespath = path.join(__dirname, "templates/views");
@@ -30,7 +30,7 @@ hbs.registerPartials(partialspath);
 
 
 //server start
-app.listen(port, () => {
+app.listen( process.env.port ||port, () => {
     console.log(`server is running at port no ${port}`);
 
 })
